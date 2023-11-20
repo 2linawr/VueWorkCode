@@ -13,8 +13,8 @@
         <div className="Click" @click="MutationProfile(post.id)"></div>
         <div className="logoProfile"></div>
         <div :id="post.id" className="infomation">
-          <span className='textinfomation_1'>{{post.username}}</span>
-          <span className='textinfomation_2'>{{post.email}}</span>
+          <span className='textinfomation_1'>[[post.username]]</span>
+          <span className='textinfomation_2'>[[post.email]]</span>
         </div>
         </div>     
 </div>
