@@ -13,8 +13,8 @@
         <div className="Click" @click="MutationProfile(post.id)"></div>
         <div className="logoProfile"></div>
         <div :id="post.id" className="infomation">
-          <span className='textinfomation_1'>[[post.username]]</span>
-          <span className='textinfomation_2'>[[post.email]]</span>
+          <span className='textinfomation_1'>{{post.username}}</span>
+          <span className='textinfomation_2'>{{post.email}}</span>
         </div>
         </div>     
 </div>
@@ -42,8 +42,8 @@ export default {
   computed: mapGetters(["allPosts","getLoadata","getUser"]),
   methods: {...mapActions(["fetchPosts","updateLoad","clearData","updateUser"]),
   getdata: function () {
-  let hrefdataid = 'http://jsonplaceholder.typicode.com/users?id=""';
-  let hrefdataname = 'http://jsonplaceholder.typicode.com/users?username=""';
+  let hrefdataid = 'https://jsonplaceholder.typicode.com/users?id=""';
+  let hrefdataname = 'https://jsonplaceholder.typicode.com/users?username=""';
 const textinput = document.getElementById('searchinput').value;
     if(textinput!=""){
     const mass = textinput.split(",");

@@ -3,11 +3,14 @@ import axios from 'axios'
 export default {
   actions: {
      fetchPosts({ commit,state }, url) {
-    axios.get(url.url_1).then((response) => { const data = response.data;
+      const headers = {
+        'Content-Type': 'application/json',
+      }
+      axios.get(url.url_1,{headers}).then((response) => { const data = response.data;
       commit('updatePosts',data)
     });  
 
-    axios.get(url.url_2).then((response) => { const data = response.data;
+    axios.get(url.url_2,{headers}).then((response) => { const data = response.data;
       commit('updatePosts_2',data)
       setTimeout(() => {
         state.loadata =false;}, 1000);
