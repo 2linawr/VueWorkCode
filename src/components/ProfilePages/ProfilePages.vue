@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import '/style.scss';
+import './style.scss';
 import { mapGetters} from "vuex";
 export default {
   name: 'ProfilePages',

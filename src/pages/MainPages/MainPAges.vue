@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import '/style.scss';
+import './style.scss';
 import { mapGetters, mapActions } from "vuex";
 import SideBar from '../../components/SideBar/SideBar';
 import ProfilePages from '../../components/ProfilePages/ProfilePages';

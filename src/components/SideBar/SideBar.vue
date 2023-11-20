@@ -34,7 +34,7 @@
 
 
 import { mapGetters, mapActions} from "vuex";
-import '/style.scss';
+import './style.scss';
 
     
 export default {
