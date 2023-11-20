@@ -1,5 +1,4 @@
 <template>
-{{console.log(getUser)}}
    <div class="MainblockSideBar">
         <span class="text_1blockside">Поиск сотрудников</span>
         <input id="searchinput" class="searchinput"  @change="getdata()" type="text" placeholder="Введите id или имя"/>
